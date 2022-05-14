@@ -144,7 +144,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [];
+            var requirementsTree = [{"text":"Register","type":"feature","href":"736b1aa347ad0cc02b60562823f1ec2654d77d4dedca53e5400dc635edd55b88.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e4 scenarios\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -215,7 +215,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated </span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 15-05-2022 01:59</span>
     <br style="clear:left"/>
 </div>
 
@@ -239,7 +239,7 @@
                             </div>
                         </div>
                             <div class="requirementNarrativeTitle">
-                                Register
+                                As user I want to register so I can have an account
                             </div>
 
                     </div>
@@ -269,13 +269,285 @@
                                                 <h3>Feature Coverage By Scenario</h3>
 
                                                 <!-- REQUIREMENTS PIE CHART -->
+                                                    <div class="chart-container" style="position: relative; width:30vw">
+                                                        <canvas id="requirementChart" width="300" height="300"></canvas>
+                                                    </div>
 
                                             </div>
                                             <div class="col-sm-8">
-                                                <h3>Requirements Overview</h3>
+                                                <!--- TOC --->
+                                                <div id="toc">
+                                                    <h3>Overview</h3>
+                                                    <table class="table" id="toc-table">
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#55c3b6e06e4401526c6ca8b68217461cca90835f857fe9df654cbe46dec9a15e"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: register with valid data
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
 
-                                                <div id="tree"></div>
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="167d1947fd50a8147634030f51763d87b3cbc36b49be19619727877310bdb02f.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
 
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="167d1947fd50a8147634030f51763d87b3cbc36b49be19619727877310bdb02f.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#f10ba994c18f92e72bc7b1711e1df0c8ae8e10ae10882c4edb75dc3452595859"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: register with an email that already registered
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="8394feaa44545cf49156575579bddaec86a06501e486563227ab12476b353ee1.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
+
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="8394feaa44545cf49156575579bddaec86a06501e486563227ab12476b353ee1.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#eac3565d6c3cfd9284b3f830ab65da649be4bfbafd944ad285af34d92c5db174"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: register with a full name that already registered
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="b7722255452d5339c42c7153c7bda53eaab1b1519ee018477448a28fc9597c8b.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
+
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="b7722255452d5339c42c7153c7bda53eaab1b1519ee018477448a28fc9597c8b.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#82266ea8b49dc0655e33a2e0a7fdbc263f0ea02ab4949d81016aac5f84d2af96"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: register with different email and the password has a space on it
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="eed3fee40f537cff4433543a9f71c0872fde0e20f5863b22df8cbe0616fa6fe1.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
+
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="eed3fee40f537cff4433543a9f71c0872fde0e20f5863b22df8cbe0616fa6fe1.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                    </table>
+                                                </div>
+                                                <!--- END OF TOC --->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                    <h3>Scenarios</h3>
+
+                                                        <a name="cf6430e1-c212-4ef7-be07-c35dc8bd01e9"></a>
+                                                        <p class="rule-tags inline-tag">
+                                                        </p>
+
+
+                                                            <div class="scenario-docs card" id="55c3b6e06e4401526c6ca8b68217461cca90835f857fe9df654cbe46dec9a15e">
+                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                                    <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="167d1947fd50a8147634030f51763d87b3cbc36b49be19619727877310bdb02f.html"
+                                                                               title="View test results">Scenario: register with valid data</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                        </span>
+
+                                                                        <span class="scenario-result-icon">
+                                                                    
+
+                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="scenario-docs card-body">
+                                                                        <p>Given I am on the register page</p>
+                                                                        <p>When I input valid full name</p>
+                                                                        <p>And I input valid email for register</p>
+                                                                        <p>And I input valid password for register</p>
+                                                                        <p>And I click on register button</p>
+                                                                        <p>Then I am on the login page after register</p>
+                                                                    <div class="examples">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="scenario-docs card" id="f10ba994c18f92e72bc7b1711e1df0c8ae8e10ae10882c4edb75dc3452595859">
+                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                                    <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="8394feaa44545cf49156575579bddaec86a06501e486563227ab12476b353ee1.html"
+                                                                               title="View test results">Scenario: register with an email that already registered</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                        </span>
+
+                                                                        <span class="scenario-result-icon">
+                                                                    
+
+                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="scenario-docs card-body">
+                                                                        <p>Given I am on the register page</p>
+                                                                        <p>When I input valid full name</p>
+                                                                        <p>And I input valid email that already registered</p>
+                                                                        <p>And I input valid password</p>
+                                                                        <p>And I click on register button</p>
+                                                                        <p>Then I am still on the register page</p>
+                                                                    <div class="examples">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="scenario-docs card" id="eac3565d6c3cfd9284b3f830ab65da649be4bfbafd944ad285af34d92c5db174">
+                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                                    <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="b7722255452d5339c42c7153c7bda53eaab1b1519ee018477448a28fc9597c8b.html"
+                                                                               title="View test results">Scenario: register with a full name that already registered</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                        </span>
+
+                                                                        <span class="scenario-result-icon">
+                                                                    
+
+                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="scenario-docs card-body">
+                                                                        <p>Given I am on the register page</p>
+                                                                        <p>When I input valid full name that already registered</p>
+                                                                        <p>And I input valid email</p>
+                                                                        <p>And I input valid password</p>
+                                                                        <p>And I click on register button</p>
+                                                                        <p>Then I am on the login page</p>
+                                                                    <div class="examples">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="scenario-docs card" id="82266ea8b49dc0655e33a2e0a7fdbc263f0ea02ab4949d81016aac5f84d2af96">
+                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                                    <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="eed3fee40f537cff4433543a9f71c0872fde0e20f5863b22df8cbe0616fa6fe1.html"
+                                                                               title="View test results">Scenario: register with different email and the password has a space on it</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                        </span>
+
+                                                                        <span class="scenario-result-icon">
+                                                                    
+
+                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="scenario-docs card-body">
+                                                                        <p>Given I am on the register page</p>
+                                                                        <p>When I input valid full name</p>
+                                                                        <p>And I input valid email</p>
+                                                                        <p>And I input invalid password with space</p>
+                                                                        <p>And I click on register button</p>
+                                                                        <p>Then I am still on the register page</p>
+                                                                    <div class="examples">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -287,6 +559,9 @@
                                             <div class="col-sm-4">
                                                 <h3>Feature Coverage By Scenario</h3>
                                                 <!-- TEST RESULT PIE CHART -->
+                                                    <div class="chart-container" style="position: relative; width:30vw">
+                                                        <canvas id="resultChart" width="300" height="300"></canvas>
+                                                    </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
@@ -311,7 +586,68 @@
                                             <div class="col-sm-12">
                                                 <h3><i class="bi bi-gear"></i> Automated Tests</h3>
 
-                                                    No automated tests were executed
+                                                    <table class="scenario-result-table table"
+                                                           id="scenario-results">
+                                                        <thead>
+                                                        <tr>
+                                                            <th class="test-name-column">Scenario</th>
+                                                            <th>Steps</th>
+                                                            <th>Started</th>
+                                                            <th>Duration</th>
+                                                            <th>Result</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="scenario-result SUCCESS">
+                                                                <td>
+                                                                        <a href="167d1947fd50a8147634030f51763d87b3cbc36b49be19619727877310bdb02f.html">register with valid data</a>
+                                                                </td>
+                                                                <td>6</td>
+                                                                <td>01:59:36</td>
+                                                                <td>3s 453ms</td>
+                                                                <td>
+                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                            style="display:none">SUCCESS</span>
+                                                                                                                                    </td>
+                                                            </tr>
+                                                            <tr class="scenario-result SUCCESS">
+                                                                <td>
+                                                                        <a href="8394feaa44545cf49156575579bddaec86a06501e486563227ab12476b353ee1.html">register with an email that already registered</a>
+                                                                </td>
+                                                                <td>6</td>
+                                                                <td>01:59:40</td>
+                                                                <td>4s 087ms</td>
+                                                                <td>
+                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                            style="display:none">SUCCESS</span>
+                                                                                                                                    </td>
+                                                            </tr>
+                                                            <tr class="scenario-result SUCCESS">
+                                                                <td>
+                                                                        <a href="b7722255452d5339c42c7153c7bda53eaab1b1519ee018477448a28fc9597c8b.html">register with a full name that already registered</a>
+                                                                </td>
+                                                                <td>6</td>
+                                                                <td>01:59:45</td>
+                                                                <td>3s 592ms</td>
+                                                                <td>
+                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                            style="display:none">SUCCESS</span>
+                                                                                                                                    </td>
+                                                            </tr>
+                                                            <tr class="scenario-result SUCCESS">
+                                                                <td>
+                                                                        <a href="eed3fee40f537cff4433543a9f71c0872fde0e20f5863b22df8cbe0616fa6fe1.html">register with different email and the password has a space on it</a>
+                                                                </td>
+                                                                <td>6</td>
+                                                                <td>01:59:49</td>
+                                                                <td>3s 675ms</td>
+                                                                <td>
+                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                            style="display:none">SUCCESS</span>
+                                                                                                                                    </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
 
                                             </div>
                                         </div>
@@ -365,7 +701,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 4}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -416,7 +752,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -460,7 +796,7 @@
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 4}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -511,7 +847,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -556,7 +892,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [0,0,0,0,0,0,0,0],
+                    data: [4,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -639,7 +975,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','0','0','0','0','0','0','0'],
+                data: ['0','4','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

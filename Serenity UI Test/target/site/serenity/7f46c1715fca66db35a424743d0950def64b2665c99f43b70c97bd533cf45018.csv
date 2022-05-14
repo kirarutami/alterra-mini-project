@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Register","register with valid data","SUCCESS","2022-05-15T01:59:36.3393068+07:00[Asia/Bangkok]","0.0","3.45"
+"Register","register with an email that already registered","SUCCESS","2022-05-15T01:59:40.429873+07:00[Asia/Bangkok]","0.0","4.09"
+"Register","register with a full name that already registered","SUCCESS","2022-05-15T01:59:45.1527027+07:00[Asia/Bangkok]","0.0","3.59"
+"Register","register with different email and the password has a space on it","SUCCESS","2022-05-15T01:59:49.3816709+07:00[Asia/Bangkok]","0.0","3.68"

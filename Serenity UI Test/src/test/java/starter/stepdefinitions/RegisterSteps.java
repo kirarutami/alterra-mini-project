@@ -37,7 +37,7 @@ public class RegisterSteps {
 
     @And("I input valid email for register")
     public void inputValidEmail() {
-        loginPage.inputEmail("saraaaaaaa@qealta.com");
+        loginPage.inputEmail("saraaaaaaaaaaaa@qealta.com");
     }
     @And("I input valid email that already registered")
     public void inputValidRegisteredEmail() {
