@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Serenity UI Test" />
         <module name="Section20" />
+        <module name="serenity-web-ui-test" />
       </profile>
     </annotationProcessing>
   </component>
