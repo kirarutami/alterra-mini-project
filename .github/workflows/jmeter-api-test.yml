@@ -1,0 +1,14 @@
+name: mini-project
+on:
+  push:
+    branches: [ master ]
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: JMeter API Test
+      uses: rbhadti94/apache-jmeter-action@v0.5.0
+      with:
+        testFilePath: MiniProjectQE_SaraLutamiPardede.jmx
+        outputReportsFolder: reports/
